@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 :</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function changeBgColor() {
+        document.body.style.backgroundColor = "lightblue";
+      }
+    </script>
+</head>
+<body>
+    <!-- Inner Text  -->
+<div id="container">
+  <p>Hello, World!</p>
+  <p>I'm learning JavaScript</p>
+  <p hidden>This paragraph is hidden.</p>
+</div>
+
+<ul id="desserts">
+  <li>Cake</li>
+  <li>Pie</li>
+</ul>
+
+<section id="example-section">
+  <h2>Example sub heading</h2>
+  <p>first paragraph</p>
+  <p>second paragraph</p>
+</section>
+
+<p>Hello World!</p>
+<p id="para">I am a paragraph.</p>
+<div class="my-class"></div>
+<button id="btn">Show alert</button>
+<input type="text" id="input" placeholder="Type Something" />
+
+<h1>Event Listener Examples</h1>
+<p id="para2">MouseOver this text to remove the event listener.</p>
+<button id="butn">Change background color</button>
+
+<!-- inline event handler -->
+
+<button onclick="alert('Hello World!')">Show alert</button>
+
+<button onclick="changeBgColor()">change background color</button>
+
+<p id="para3">This is a paragrapgh.</p>
+
+<button id="toggle-btn">Toggle Menu</button>
+
+<nav id="menu" class="menu">
+  <ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Products</li>
+  </ul>
+</nav>
+
+<h1>Image change on DOM loaded</h1>
+<img
+ id="example-img"
+  src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+  alt="Cat relaxing"
+/>
+<h1>Cancel Timeout Example</h1>
+<button id="cancelButton">Cancel Timeout</button>
+
+<div id="rect" class="rect">freeCodeCamp is Awesome</div>
+
+   <script src="./day3.js"></script> 
+</body>
+</html>

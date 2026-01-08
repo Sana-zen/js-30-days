@@ -1,0 +1,50 @@
+#butn {
+    background: linear-gradient(135deg, #ff4d94ef, #ff005d);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(123, 0, 255, 0.2);
+}
+
+#butn:hover {
+  background: linear-gradient(135deg, #ff66cc, #ff33b4);
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.menu {
+  display: none;
+  background-color: lightgray;
+  width: 50%;
+  padding: 10px;
+}
+
+.menu.show {
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.rect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 250px;
+  border-radius: 5px;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-size: 2rem;
+  position: absolute;
+}
