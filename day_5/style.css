@@ -1,0 +1,209 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.quote-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 50px 40px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.quote-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+}
+
+.quote-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.quote-header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.quote-display {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote-icon {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: Georgia, serif;
+}
+
+.quote-text {
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.quote-author {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  text-align: right;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.quote-author::before {
+  content: "— ";
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 15px 35px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: #ffffff;
+  box-shadow: 0 5px 20px rgba(245, 87, 108, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(245, 87, 108, 0.6);
+}
+
+.btn-secondary {
+  background: #2d3748;
+  color: #ffffff;
+  box-shadow: 0 5px 20px rgba(45, 55, 72, 0.3);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(45, 55, 72, 0.5);
+  background: #1a202c;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+}
+
+.social-share {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.social-share p {
+  color: #4a5568;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.social-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.social-btn.twitter {
+  background: #1da1f2;
+}
+
+.social-btn.facebook {
+  background: #4267b2;
+}
+
+.social-btn.whatsapp {
+  background: #25d366;
+}
+
+.social-btn:hover {
+  transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+  .quote-container {
+    padding: 35px 25px;
+  }
+
+  .quote-header h1 {
+    font-size: 2rem;
+  }
+
+  .quote-text {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+}
