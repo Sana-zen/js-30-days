@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hunter-green: #386641;
+    --sage-green: #6A994E;
+    --yellow-green: #A7C957;
+    --champange-mist: #F2E8CF;
+    --blushed-brick: #BC4749;
+    --fs-x-lg: 3rem;
+    --fs-lg: 2.2rem;
+    --fs-md: 1.2rem;
+    --fs-base: 1rem;
+    --fs-sm: 0.9rem;
+}
+
+body {
+    background-color: var(--champange-mist);
+    font-family: "Roboto Slab", serif;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+   background-color: var(--blushed-brick);
+   padding: 3rem;
+   border-radius: 0.7rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 2rem;
+}
+
+.title {
+font-size: var(--fs-lg);
+}
+
+#value {
+    text-align: center;
+    display: block;
+    font-size: var(--fs-x-lg);
+}
+
+.btn-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: var(--fs-md);
+    background-color: var(--yellow-green);
+    transition: background-color 0.25s ease;
+}
+
+
+
+
+
